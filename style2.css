@@ -5,7 +5,6 @@
 }
 header {
   border-radius: 8px;
-  background-color: #00fff7;
   background-size: contain;
   padding: 10px;
   margin-bottom: 50px;
@@ -15,6 +14,9 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  background: rgb(71, 179, 104);
+  background: linear-gradient(90deg, #47b367 0%, #1c8894 100%);
 }
 
 body {
@@ -47,18 +49,28 @@ button {
 }
 
 #open-modal {
-  background-color: #00fff7;
-  color: #000;
+  color: #fff;
   font-family: "Tilt Neon";
   font-weight: 120px;
   margin-left: 30px;
   margin-bottom: 30px;
   margin-top: 30px;
+  background: rgb(71, 179, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 179, 104, 1) 0%,
+    rgba(28, 136, 148, 1) 100%
+  );
 }
 
 button:hover {
   transition: 0.7s;
-  background-color: #00fff7;
+  background: rgb(71, 179, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 179, 104, 1) 0%,
+    rgba(28, 136, 148, 1) 100%
+  );
   color: #000;
 }
 
@@ -83,9 +95,13 @@ button:hover {
   padding: 1.2rem;
   border-radius: 0.5rem;
   z-index: 10;
-  -webkit-box-shadow: 0px 0px 129px 35px rgba(0, 255, 247, 1);
-  -moz-box-shadow: 0px 0px 129px 35px rgba(0, 255, 247, 1);
-  box-shadow: 0px 0px 129px 35px rgba(0, 255, 247, 1);
+  /* -webkit-box-shadow: 0px 0px 129px 35px #1c8894;
+  -moz-box-shadow: 0px 0px 129px 35px #1c8894;
+  box-shadow: 0px 0px 129px 35px #1c8894; */
+  -webkit-box-shadow: 25px -25px 50px 15px #47b367, -25px 25px 50px 15px #1c8894,
+    -25px 25px 50px 15px #1c8894;
+  box-shadow: 25px -25px 50px 15px #47b367, -25px 25px 50px 15px #1c8894,
+    -25px 25px 50px 15px #1c8894;
 }
 
 #fade,
@@ -133,6 +149,11 @@ table {
 td,
 th {
   padding-left: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 th {
@@ -220,4 +241,10 @@ textarea {
   height: 0.5em;
   background-color: var(--select-arrow);
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+table th img {
+  width: 22px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
